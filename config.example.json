@@ -3,7 +3,7 @@
         "port": 80
     },
     "post_limit": 10,
-    "account_server_domain": "account.pretendo.cc",
+    "account_server_domain": "account.brocatech.com",
     "mii_image_CDN": "https://mii.cdn.example.com",
     "CDN_domain": "https://cdn.example.com",
     "whitelist": "1|http,example.http.domain,,2|1|https,example.https.domain,,2",
