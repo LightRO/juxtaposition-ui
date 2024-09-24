@@ -66,7 +66,7 @@ router.post('/', async (req, res) => {
 			moderator: req.moderator
 		});
 	}
-	const cookieDomain = (req.hostname.indexOf('miiverse') !== -1) ? '.miiverse.cc' : '.pretendo.network';
+	const cookieDomain = (req.hostname.indexOf('miiverse') !== -1) ? '.miiverse.cc' : '.brocatech.com';
 	const expiration = (req.hostname.indexOf('miiverse') !== -1) ? login.expiresIn * 60 * 60 * 24 : login.expiresIn * 60 * 60;
 	res.cookie('access_token', login.accessToken, { domain : cookieDomain, maxAge: expiration });
 	res.cookie('refresh_token', login.refreshToken, { domain : cookieDomain });

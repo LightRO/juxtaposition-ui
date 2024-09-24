@@ -46,7 +46,7 @@ router.get('/:post_id/oembed.json', async function (req, res) {
 	const post = await database.getPostByID(req.params.post_id.toString());
 	const doc = {
 		'author_name': post.screen_name,
-		'author_url': 'https://juxt.pretendo.network/users/show?pid=' + post.pid,
+		'author_url': 'https://juxt.brocatech.com/users/show?pid=' + post.pid,
 	};
 	res.send(doc);
 });
